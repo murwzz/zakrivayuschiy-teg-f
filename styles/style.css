@@ -12,7 +12,7 @@
 
 .page {
   font-family: var(--font-main), sans-serif;
-  font-variation-settings: 'wght' var(--fw-main, 410);
+  font-variation-settings: "wght" var(--fw-main, 410);
   background-image: var(--bg-gradient);
   background-attachment: fixed;
   background-size: cover;
@@ -64,7 +64,7 @@
 }
 
 .card__title {
-  font-variation-settings: 'wght' 715;
+  font-variation-settings: "wght" 715;
   padding: 4px 10px;
   font-size: 18px;
 }
@@ -82,7 +82,7 @@
   position: relative;
   width: 100%;
   aspect-ratio: 1 / 1;
-  overflow: hidden; 
+  overflow: hidden;
   border-bottom: 2px solid #000;
   border-top: 2px solid #000;
 }
@@ -95,24 +95,20 @@
   font-size: 14px;
   opacity: 0.5;
   mix-blend-mode: hard-light;
-  text-shadow:
-  -1px 0 #FFFFFF, 
-  0 1px #FFFFFF, 
-  1px 0 #FFFFFF, 
-  0 -1px #FFFFFF;
+  text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
 }
 
-@supports (-webkit-text-stroke: 1px #FFFFFF) {
+@supports (-webkit-text-stroke: 1px #ffffff) {
   .card__label {
-    -webkit-text-stroke: 1px #FFFFFF;
+    -webkit-text-stroke: 1px #ffffff;
     text-shadow: none;
   }
 }
 
 .card__img {
-  width: 100%; 
-  aspect-ratio: 1 / 1;         
-  object-fit: cover;      
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   object-position: center center;
   height: 100%;
   display: block;
@@ -123,7 +119,7 @@
 }
 
 .card__img__saturate {
-  filter: saturate(190%);
+  filter: saturate(190%) brightness(90%);
 }
 
 .card__img__contrast {
@@ -229,7 +225,7 @@
 }
 
 .card__like-button {
-  background-color: transparent; 
+  background-color: transparent;
   height: 38px;
   width: 130px;
   font-family: var(--font-accent);
@@ -261,7 +257,7 @@
 }
 
 .button:hover::before {
-  transform: scaleX(1)
+  transform: scaleX(1);
 }
 
 .button:focus {
@@ -277,7 +273,11 @@
 }
 
 .footer {
-  width: clamp(306px, calc(306px + (335 - 306) * ((100vw - 375px) / (1440 - 375))), 335px);
+  width: clamp(
+    306px,
+    calc(306px + (335 - 306) * ((100vw - 375px) / (1440 - 375))),
+    335px
+  );
   margin-top: 50px;
   margin-inline: auto;
   margin-bottom: 100px;
@@ -363,5 +363,3 @@
     width: 341px;
   }
 }
-
-
