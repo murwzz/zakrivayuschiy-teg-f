@@ -1,1 +1,1 @@
-https://murwzz.github.io/zakrivayuschiy-teg-f/
+https://github.com/murwzz/zakrivayuschiy-teg-f.git
