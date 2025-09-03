@@ -247,6 +247,7 @@
   isolation: isolate;
   background-color: var(--btn-bg);
   color: var(--btn-fg);
+  border: 2px solid #000;
 }
 
 .button::before {
@@ -294,7 +295,6 @@
   font-size: 14px;
   line-height: 0.9;
   background-color: var(--btn-bg);
-  border: 2px solid #000;
   width: 100%;
   padding: 15px 18px;
 }
@@ -316,7 +316,6 @@
   column-gap: 12px;
   width: 353px;
   align-items: center;
-  overflow: hidden;
 }
 
 .dialog__img {
